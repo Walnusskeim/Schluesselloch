@@ -45,28 +45,6 @@ header a:hover {
   margin-bottom: 20px;
 }
 
-
-.hero p {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-.button {
-  background-color: transparent;
-  border: 2px solid #bb86fc;
-  color: #ffffff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.button:hover {
-  background-color: #bb86fc;
-  color: #121212;
-}
-
 section {
   padding: 60px 20px;
   max-width: 1500px;
@@ -90,7 +68,7 @@ h2 {
 }
 
 .active, .collapsible:hover {
-  background-color: #bb86fc;
+  background: linear-gradient(270deg, #bb86fc, #7a4bd9);;
 }
 
 .content {
