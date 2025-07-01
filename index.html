@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meine persönliche Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div><strong>Wait I'm goated</strong></div>
+    <nav>
+      <a href="#about">About me</a>
+      <a href="projects.html">Projects</a>
+	  <a href="music.html">Music</a>
+      <a href="websites.html">Other Websites</a>
+      <a href="hobby.html">My collecting hobby</a>
+      <a href="obsessions.html">Obsessions</a>
+      <a href="temple.html">Worship temple</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to my very cool page</h1>
+    <p></p>
+    <button class="button">Mehr erfahren</button>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>Text Text TExt TExt Text Text</p>
+  </section>
+
+  <section id="projects">
+    <h2>Recent projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Text Text Text Text Text Text Text Text Text Text</p>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Text Text Text Text Text Text Text Text Text Text</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+	<p>
+	  I doubt that this site will make big circles around the world. If it does, however, say hi!
+	  <span id="email" style="color: #bb86fc;">walnusskeim727@proton.me</span>
+	  <span id="copyText" style="cursor: pointer; text-decoration: underline; color: #b3b3b3;">(click to copy email to clipboard)</span>
+	</p>
+	
+	<button type="button" class="collapsible">also with PGP if you like :)</button>
+		<div class="content">
+		  <pre><code>
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+mDMEaGPiLRYJKwYBBAHaRw8BAQdAt+T3bJGjQJ8hzHuMLIPTPI8aferMwprxxr0p
+cIVUPZa0Kk1heGltaWxpYW4gS29jaCA8d2FsbnVzc2tlaW03MjdAcHJvdG9uLm1l
+PoiTBBMWCgA7FiEEpGrhrZ25xRqUEMxnlaxnHOpc8EYFAmhj4i0CGwMFCwkIBwIC
+IgIGFQoJCAsCBBYCAwECHgcCF4AACgkQlaxnHOpc8EbZlAD/fMahj4pbkUGmazoa
+H01Zc5aFdpYRNOzL8MqXetVW2vcBANolJJ7OM02Un9XFnkn86Z/+alYw33cxPFf+
+Sy069FQAuDgEaGPiLRIKKwYBBAGXVQEFAQEHQNvnHKXIr6LX4UxiG5tIMOdFbMUW
+VqRI85maFc+LaUoQAwEIB4h4BBgWCgAgFiEEpGrhrZ25xRqUEMxnlaxnHOpc8EYF
+Amhj4i0CGwwACgkQlaxnHOpc8EabmgEAskIawnJaVxNSvFmj5a4q4UWPhZPBIEMO
+OXHptr2o3xwBAKGHtMgWHooxzphFujC4mAPEDQ9nroZHWtKXpru104gM
+=37jM
+-----END PGP PUBLIC KEY BLOCK-----
+		  </code></pre>
+		</div> 
+  </section>
+  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+  document.getElementById("copyText").addEventListener("click", function () {
+    const text = document.getElementById("email").innerText;
+
+    navigator.clipboard.writeText(text).then(function () {
+      const feedback = document.getElementById("copyFeedback");
+      feedback.style.display = "inline";
+      setTimeout(() => feedback.style.display = "none", 2000);
+    }).catch(function (err) {
+      console.error("Fehler beim Kopieren: ", err);
+    });
+  });
+</script>
+
+
+  <footer>
+    &copy; 2025 Mein Name – Alle Rechte vorbehalten
+  </footer>
+
+</body>
+</html>
