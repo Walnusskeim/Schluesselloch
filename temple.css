@@ -1,9 +1,19 @@
+html, body {  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
 body {
   background-color: #121212;
   color: #ffffff;
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
+  
 }
 
 header {
@@ -35,6 +45,7 @@ header a:hover {
 }
 
 .hero {
+  flex: 1;
   position: relative;
   z-index: 1;
   min-height: 100vh;

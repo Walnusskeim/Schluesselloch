@@ -29,7 +29,7 @@ header a:hover {
   color: #ffffff;
 }
 
-.root {
+.website {
   color: #FFFFFF;
   margin-left: 0px;
 }
@@ -57,14 +57,13 @@ header a:hover {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
 }
 
 .hero-header p {
   font-size: 1rem;
   color: white;
   z-index: 1;
-
 }
 
 .box-container {
