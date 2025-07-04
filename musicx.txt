@@ -1,2 +1,0 @@
-h1 = "Music that i like"
-<p>a deep dive into my (strange?) music taste</p>
